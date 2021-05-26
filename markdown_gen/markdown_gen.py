@@ -61,7 +61,7 @@ class MarkDownTableGenerator:
         markdown_header = str()
         for element in header:
             markdown_header += ('|' + element.center(self.max_size()))
-        markdown_header = markdown_header.rstrip('\n')
+        markdown_header = markdown_header.replace('\n', ' ')
         markdown_header += '|'
         return markdown_header
 

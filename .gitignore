@@ -132,7 +132,7 @@ dmypy.json
 
 add.py
 
-test_add.py
+ttt/test_add.py
 
 tmp.py
 
