@@ -24,6 +24,7 @@ wheels/
 pip-wheel-metadata/
 share/python-wheels/
 *.egg-info/
+venv
 .installed.cfg
 *.egg
 MANIFEST
@@ -128,3 +129,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+add.py
+
+test_add.py
+
+tmp.py
+
+TEST.csv~
+
+report.txt
+
+Table.md
