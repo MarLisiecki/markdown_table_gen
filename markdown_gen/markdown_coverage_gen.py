@@ -34,6 +34,12 @@ class MarkDownCoverageTable:
             sleep(1)
 
     def prepare_txt(self):
+        """
+        Functon which prerare text file and delete site-packages from report
+
+        Returns:
+            list: Return list with report
+        """
         with open('report.txt', "r+") as file:
             content = file.readlines()
             output = list()
@@ -49,6 +55,10 @@ class MarkDownCoverageTable:
             return output
 
     def create_csv_from_txt(self):
+        """
+        Function which genereate CSV file from properly prepared text file
+
+        """
         input = self.prepare_txt()
         with open('report.csv', 'w') as file:
             for element in input:
@@ -57,6 +67,10 @@ class MarkDownCoverageTable:
                     file.write(single + '\n')
 
     def create_markdown_file(self):
+        """
+        Function which generate markdown file with coverage report
+
+        """
         mdtg = MarkDownTableGenerator('report.csv', title='Report')
         mdtg.generate_markdown_file()
 
