@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from markdown_gen.markdown_gen import MarkDownTableGenerator
-from markdown_gen.tests.test_sup import ConstForTests
+from tests.test_sup import ConstForTests
 
 
 def test_create_header():
@@ -72,4 +72,4 @@ def test_generate_markdown():
     """
     mdtg = MarkDownTableGenerator('TEST.csv', title ='Table')
     mdtg.generate_markdown_file()
-    assert os.path.exists(os.path.join(Path(__file__).parent.parent.parent,'Table.md')) == True
+    assert os.path.exists(os.path.join(Path(__file__).parent.parent,'Table.md')) == True
