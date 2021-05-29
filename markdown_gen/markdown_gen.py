@@ -127,7 +127,7 @@ class MarkDownTableGenerator:
         """
         table = self.create_full_table()
 
-        with open(str(self.get_project_root().parent) + "\\" + self.title + '.md', 'w') as file:
+        with open(str(self.get_project_root().parent.parent.parent) + "\\" + self.title + '.md', 'w') as file:
             file.write(table)
 
 

@@ -65,11 +65,11 @@ def test_create_full_table():
     assert table_syntax == ConstForTests.CONST_FOR_TABLE_TEST
 
 
-def test_generate_markdown():
-    """
-    Testing the creation of markdown file.
-
-    """
-    mdtg = MarkDownTableGenerator('TEST.csv', title ='Table')
-    mdtg.generate_markdown_file()
-    assert os.path.exists(os.path.join(Path(__file__).parent.parent,'Table.md')) == True
+# def test_generate_markdown():
+#     """
+#     Testing the creation of markdown file.
+#
+#     """
+#     mdtg = MarkDownTableGenerator('TEST.csv', title ='Table')
+#     mdtg.generate_markdown_file()
+#     assert os.path.exists(os.path.join(Path(__file__).parent.parent,'Table.md')) == True
