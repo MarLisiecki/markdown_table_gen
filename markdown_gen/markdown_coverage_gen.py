@@ -10,7 +10,7 @@ class MarkDownCoverageTable:
         Initial function
 
         Args:
-            file_paths: File paths with name
+            file_paths: File paths for tests with name
             Examples:
                 If file is in another directory:
                 mdct = MarkDownCoverageTable(['ttt/test_add.py'])
